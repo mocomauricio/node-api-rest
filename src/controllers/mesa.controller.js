@@ -61,15 +61,16 @@ export async function deleteMesa(req, res){
 
 export async function createMesa(req, res){
     //console.log(req.body);
-    const { nombre, restaurante_id, posicion, planta } = req.body;
+    const { nombre, restaurante_id, posicion, planta, capacidad } = req.body;
     try {
         let newMesa = await Mesa.create({
             nombre: nombre,
             restaurante_id: restaurante_id,
             posicion:posicion,
-            planta:planta
+            planta:planta,
+            capacidad:capacidad
         },{
-            fields:[ 'nombre', 'restaurante_id', 'posicion', 'planta']
+            fields:[ 'nombre', 'restaurante_id', 'posicion', 'planta', 'capacidad']
         });
         if (newMesa) {
             return res.json({
@@ -88,7 +89,7 @@ export async function createMesa(req, res){
 
 export async function updateMesa(req, res){
     const { id } = req.params;
-    const { nombre, restaurante_id, posicion, planta } = req.body;
+    const { nombre, restaurante_id, posicion, planta, capacidad } = req.body;
 
     try {
         const mesa = await Mesa.findOne({
@@ -101,7 +102,8 @@ export async function updateMesa(req, res){
             nombre: nombre,
             restaurante_id: restaurante_id,
             posicion:posicion,
-            planta:planta
+            planta:planta,
+            capacidad:capacidad
         });
 
         return res.json({
