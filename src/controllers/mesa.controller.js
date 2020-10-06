@@ -1,10 +1,10 @@
-import Project from '../models/Projects'
+import Mesa from '../models/Mesas'
 
-export async function getProjects(req, res){
+export async function getMesas(req, res){
     try {
-        const projects = await Project.findAll();
+        const mesas = await Mesa.findAll();
         res.json({
-            data:projects
+            data:mesas
         });        
     } catch (error) {
         console.log(error)
@@ -15,16 +15,16 @@ export async function getProjects(req, res){
     }
 }
 
-export async function getOneProject(req, res){
+export async function getOneMesa(req, res){
     const { id } = req.params;
     try {
 
-        const project = await Project.findOne({
+        const mesa = await Mesa.findOne({
             where: {
                 id:id
             }
         });
-        res.json(project);        
+        res.json(mesa);        
     } catch (error) {
         console.log(error)
         return res.status(500).json({
@@ -36,16 +36,16 @@ export async function getOneProject(req, res){
 
 }
 
-export async function deleteProject(req, res){
+export async function deleteMesa(req, res){
     const { id } = req.params;
     try {
-        const deleteRowCount = await Project.destroy({
+        const deleteRowCount = await Mesa.destroy({
             where: {
                 id:id
             }
         });
         res.json({
-            message: 'Proyecto eliminado', 
+            message: 'Mesa eliminada', 
             count: deleteRowCount
         });        
     } catch (error) {
@@ -59,22 +59,22 @@ export async function deleteProject(req, res){
 
 }
 
-export async function createProject(req, res){
+export async function createMesa(req, res){
     //console.log(req.body);
-    const { name, priority, description, deliverydate } = req.body;
+    const { nombre, restaurante_id, posicion, planta } = req.body;
     try {
-        let newProject = await Project.create({
-            name: name,
-            priority: priority,
-            description:description,
-            deliverydate:deliverydate
+        let newMesa = await Mesa.create({
+            nombre: nombre,
+            restaurante_id: restaurante_id,
+            posicion:posicion,
+            planta:planta
         },{
-            fields:[ 'name', 'priority', 'description', 'deliverydate']
+            fields:[ 'nombre', 'restaurante_id', 'posicion', 'planta']
         });
-        if (newProject) {
+        if (newMesa) {
             return res.json({
-                message: 'Proyecto creado satisfactoriamente',
-                data: newProject
+                message: 'Mesa creada satisfactoriamente',
+                data: newMesa
             });
         }
     } catch (error) {
@@ -86,27 +86,27 @@ export async function createProject(req, res){
     }
 }
 
-export async function updateProject(req, res){
+export async function updateMesa(req, res){
     const { id } = req.params;
-    const { name, priority, description, deliverydate } = req.body;
+    const { nombre, restaurante_id, posicion, planta } = req.body;
 
     try {
-        const project = await Project.findOne({
+        const mesa = await Mesa.findOne({
             where: {
                 id:id
             }
         });
 
-        await project.update({
-            name:name,
-            priority:priority,
-            description:description,
-            deliverydate:deliverydate
+        await mesa.update({
+            nombre: nombre,
+            restaurante_id: restaurante_id,
+            posicion:posicion,
+            planta:planta
         });
 
         return res.json({
-            message: 'Proyecto actualizado satisfactoriamente',
-            data: project
+            message: 'Mesa actualizado satisfactoriamente',
+            data: mesa
         });
         
     } catch (error) {

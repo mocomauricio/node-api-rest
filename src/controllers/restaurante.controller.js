@@ -1,10 +1,10 @@
-import Task from '../models/Tasks'
+import Restaurante from '../models/Restaurantes'
 
-export async function getTasks(req, res){
+export async function getRestaurantes(req, res){
     try {
-        const tasks = await Task.findAll();
+        const restaurantes = await Restaurante.findAll();
         res.json({
-            data:tasks
+            data:restaurantes
         });        
     } catch (error) {
         console.log(error)
@@ -15,16 +15,16 @@ export async function getTasks(req, res){
     }
 }
 
-export async function getOneTask(req, res){
+export async function getOneRestaurante(req, res){
     const { id } = req.params;
     try {
 
-        const task = await Task.findOne({
+        const restaurante = await Restaurante.findOne({
             where: {
                 id:id
             }
         });
-        res.json(task);        
+        res.json(restaurante);        
     } catch (error) {
         console.log(error)
         return res.status(500).json({
@@ -36,16 +36,16 @@ export async function getOneTask(req, res){
 
 }
 
-export async function deleteTask(req, res){
+export async function deleteRestaurante(req, res){
     const { id } = req.params;
     try {
-        const deleteRowCount = await Task.destroy({
+        const deleteRowCount = await Restaurante.destroy({
             where: {
                 id:id
             }
         });
         res.json({
-            message: 'Tarea eliminada', 
+            message: 'Reserva eliminada', 
             count: deleteRowCount
         });        
     } catch (error) {
@@ -59,21 +59,20 @@ export async function deleteTask(req, res){
 
 }
 
-export async function createTask(req, res){
+export async function createRestaurante(req, res){
     //console.log(req.body);
-    const { name, done, projectid } = req.body;
+    const { nombre, direccion } = req.body;
     try {
-        let newTask = await Task.create({
-            name,
-            done,
-            projectid
+        let newRestaurante = await Restaurante.create({
+            nombre: nombre,
+            direccion: direccion
         },{
-            fields:[ 'name', 'done', 'projectid']
+            fields:[ 'nombre', 'direccion']
         });
-        if (newTask) {
+        if (newRestaurante) {
             return res.json({
-                message: 'Tarea creada satisfactoriamente',
-                data: newTask
+                message: 'Restaurante creado satisfactoriamente',
+                data: newRestaurante
             });
         }
     } catch (error) {
@@ -85,26 +84,25 @@ export async function createTask(req, res){
     }
 }
 
-export async function updateTask(req, res){
+export async function updateRestaurante(req, res){
     const { id } = req.params;
-    const { name, done, projectid } = req.body;
+    const { nombre, direccion } = req.body;
 
     try {
-        const task = await Task.findOne({
+        const restaurante = await Restaurante.findOne({
             where: {
                 id:id
             }
         });
 
-        await task.update({
-            name: name,
-            done: done,
-            projectid: projectid
+        await restaurante.update({
+            nombre: nombre,
+            direccion: direccion
         });
 
         return res.json({
-            message: 'Tarea actualizada satisfactoriamente',
-            data: task
+            message: 'Restaurante actualizado satisfactoriamente',
+            data: restaurante
         });
         
     } catch (error) {
@@ -114,7 +112,4 @@ export async function updateTask(req, res){
             data: {}
         });
     }
-}
-
-export async function getTaskByProject(req, res){
 }

@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel src --out-dir dist",
     "start": "node dist/index.js",
-    "dev": "nodemon src/index.js --exec babel-node"
+    "dev": "nodemon src/index.js --exec babel-node",
+    "migrate": "nodemon src/databases/migrate.js --exec babel-node"
   },
   "author": "",
   "license": "ISC",
