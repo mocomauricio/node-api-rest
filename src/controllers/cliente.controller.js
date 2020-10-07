@@ -115,3 +115,23 @@ export async function updateCliente(req, res){
     }
 }
 
+export async function getClientePorCedula(req, res){
+    const { cedula } = req.params;
+    try {
+
+        const cliente = await Cliente.findOne({
+            where: {
+                cedula:cedula
+            }
+        });
+        res.json(cliente);        
+    } catch (error) {
+        console.log(error)
+        return res.status(500).json({
+            message: 'Hubo un error',
+            data: {}
+        });
+    }
+
+
+}

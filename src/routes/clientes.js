@@ -2,9 +2,9 @@ import { Router } from 'express';
 
 const router = Router();
 
-import { createCliente, getClientes, getOneCliente, deleteCliente, updateCliente } from '../controllers/cliente.controller';
+import { createCliente, getClientes, getOneCliente, deleteCliente, updateCliente, getClientePorCedula } from '../controllers/cliente.controller';
 
-// /api/cliente/
+// /api/clientes/
 router.post('/', createCliente);
 router.get('/', getClientes);
 
@@ -12,5 +12,8 @@ router.get('/', getClientes);
 router.get('/:id', getOneCliente);
 router.delete('/:id', deleteCliente);
 router.put('/:id', updateCliente);
+
+// /api/clientes/cedula/:cedula
+router.get('/cedula/:cedula', getClientePorCedula);
 
 export default router;
