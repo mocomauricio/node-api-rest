@@ -13,8 +13,10 @@ router.get('/:id', getOneReserva);
 router.delete('/:id', deleteReserva);
 router.put('/:id', updateReserva);
 
-// /api/reservas/:id
+// /api/restaurante_fecha/:restaurante_id/:fecha
 router.get('/restaurante_fecha/:restaurante_id/:fecha', getReservasPorRestauranteFecha);
+
+// /api/restaurante_fecha_cliente/:restaurante_id/:fecha/:cliente_id
 router.get('/restaurante_fecha_cliente/:restaurante_id/:fecha/:cliente_id', getReservasPorRestauranteFechaCliente);
 
 export default router;
