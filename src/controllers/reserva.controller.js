@@ -121,3 +121,59 @@ export async function updateReserva(req, res){
         });
     }
 }
+
+export async function getReservasPorRestauranteFecha(req, res){
+    const { restaurante_id, fecha } = req.params;
+    try {
+        const reservas = await Reserva.findAll({
+            where: {
+                restaurante_id: restaurante_id,
+                fecha: fecha
+            }
+            /*
+            order: [
+                ['id', 'DESC'],
+                ['name', 'ASC'],
+            ],
+            */
+
+        });
+        res.json({
+            data:reservas
+        });        
+    } catch (error) {
+        console.log(error)
+        return res.status(500).json({
+            message: 'Hubo un error',
+            data: {}
+        });
+    }
+}
+
+export async function getReservasPorRestauranteFechaCliente(req, res){
+    const { restaurante_id, fecha, cliente_id } = req.params;
+    try {
+        const reservas = await Reserva.findAll({
+            where: {
+                restaurante_id: restaurante_id,
+                fecha: fecha,
+                cliente_id: cliente_id
+            }
+            /*
+            order: [
+                ['id', 'DESC'],
+                ['name', 'ASC'],
+            ],
+            */
+        });
+        res.json({
+            data:reservas
+        });        
+    } catch (error) {
+        console.log(error)
+        return res.status(500).json({
+            message: 'Hubo un error',
+            data: {}
+        });
+    }
+}
