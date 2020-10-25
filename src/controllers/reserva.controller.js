@@ -60,7 +60,6 @@ export async function deleteReserva(req, res){
 }
 
 export async function createReserva(req, res){
-    //console.log(req.body);
     const { restaurante_id, mesa_id, cliente_id, fecha, rango_hora, cantidad_solicitada } = req.body;
     try {
         let newReserva = await Reserva.create({

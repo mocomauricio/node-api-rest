@@ -1,0 +1,682 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"res",
+				"restaurante_id"
+			],
+			[
+				"id",
+				"id_buscar_mesa"
+			],
+			[
+				"i",
+				"id_rango_hora"
+			],
+			[
+				"reat",
+				"restaurante"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"conta",
+				"contador_notificaciones_id"
+			],
+			[
+				"no",
+				"notificaciones_id"
+			],
+			[
+				"l",
+				"li\tTag"
+			],
+			[
+				"pre",
+				"pre_save"
+			],
+			[
+				"usua",
+				"usuario"
+			],
+			[
+				"o",
+				"ot_actual"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"not",
+				"notificacion"
+			],
+			[
+				"M",
+				"Meta"
+			],
+			[
+				"c",
+				"class\tNew Class"
+			],
+			[
+				"se",
+				"serializers"
+			],
+			[
+				"mo",
+				"models"
+			],
+			[
+				"n",
+				"notificacion"
+			],
+			[
+				"usu",
+				"usuario"
+			],
+			[
+				"usuar",
+				"usuario"
+			],
+			[
+				"det",
+				"detalles_grupo"
+			],
+			[
+				"de",
+				"detalle"
+			],
+			[
+				"pk",
+				"pk_set"
+			],
+			[
+				"usi",
+				"usuarios"
+			],
+			[
+				"deta",
+				"detalles"
+			],
+			[
+				"d",
+				"detalles"
+			],
+			[
+				"B",
+				"BooleanField"
+			],
+			[
+				"s",
+				"save"
+			],
+			[
+				"D",
+				"DetalleNotificacion"
+			],
+			[
+				"F",
+				"ForeignKey"
+			],
+			[
+				"T",
+				"True"
+			],
+			[
+				"fec",
+				"fecha_creacion"
+			],
+			[
+				"lo",
+				"login_forbidden"
+			],
+			[
+				"fu",
+				"ful_path"
+			],
+			[
+				"ger",
+				"get_user"
+			],
+			[
+				"u",
+				"user"
+			],
+			[
+				"au",
+				"authenticate"
+			],
+			[
+				"ht",
+				"HttpResponseRedirect"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"nex",
+				"next_url"
+			],
+			[
+				"logi",
+				"login_view"
+			],
+			[
+				"ne",
+				"next_url"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"get",
+				"get_success_url"
+			],
+			[
+				"su",
+				"success_url"
+			],
+			[
+				"SE",
+				"self"
+			],
+			[
+				"lO",
+				"LoginView"
+			],
+			[
+				"L",
+				"LoginForm"
+			],
+			[
+				"for",
+				"forms"
+			],
+			[
+				"Lo",
+				"LoginView"
+			],
+			[
+				"us",
+				"usuario"
+			],
+			[
+				"cl",
+				"cliente"
+			],
+			[
+				"OR",
+				"orden_trabajo_anterior"
+			],
+			[
+				"ord",
+				"orden_trabajo"
+			],
+			[
+				"orde",
+				"order_by"
+			],
+			[
+				"S",
+				"Snippet"
+			],
+			[
+				"sni",
+				"snippets"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"U",
+				"UserViewSet"
+			],
+			[
+				"C",
+				"CharField"
+			],
+			[
+				"pro",
+				"projectRoutes"
+			],
+			[
+				"m",
+				"morgan"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "front-end/index.html",
+			"settings":
+			{
+				"buffer_size": 2874,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/controllers/mesa.controller.js",
+			"settings":
+			{
+				"buffer_size": 3246,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/models/Mesas.js",
+			"settings":
+			{
+				"buffer_size": 960,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/controllers/cliente.controller.js",
+			"settings":
+			{
+				"buffer_size": 3068,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"exit",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/galactus/Desktop/node-api-rest",
+		"/home/galactus/Desktop/node-api-rest/cliente",
+		"/home/galactus/Desktop/node-api-rest/front-end",
+		"/home/galactus/Desktop/node-api-rest/front-end/static",
+		"/home/galactus/Desktop/node-api-rest/front-end/static/css",
+		"/home/galactus/Desktop/node-api-rest/front-end/static/js",
+		"/home/galactus/Desktop/node-api-rest/front-end/static/vendor",
+		"/home/galactus/Desktop/node-api-rest/src",
+		"/home/galactus/Desktop/node-api-rest/src/controllers",
+		"/home/galactus/Desktop/node-api-rest/src/models",
+		"/home/galactus/Desktop/node-api-rest/src/routes"
+	],
+	"file_history":
+	[
+		"/home/galactus/Desktop/demo/sb-admin-master/login.html",
+		"/home/galactus/Desktop/node-api-rest/src/app.js",
+		"/home/galactus/Desktop/node-api-rest/cliente/index.html",
+		"/home/galactus/Desktop/node-api-rest/src/routes/clientes.js",
+		"/home/galactus/Desktop/demo/demo/principal/urls.py",
+		"/home/galactus/Desktop/demo/demo/principal/templates/registro/password_reset_done.html",
+		"/home/galactus/Desktop/demo/demo/principal/templates/registro/password_reset.html",
+		"/home/galactus/Desktop/demo/demo/principal/templates/registro/login.html",
+		"/home/galactus/Desktop/demo/demo/principal/templates/forgot-password.html",
+		"/home/galactus/Desktop/demo/demo/principal/templates/registro/password_reset_form.html",
+		"/home/galactus/Desktop/labexpress/labexpress/authentication/views.py",
+		"/home/galactus/Desktop/labexpress/labexpress/authentication/urls.py",
+		"/home/galactus/Desktop/labexpress/labexpress/labExpress/urls.py",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/mdb/index.html",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/admin/base_cliente.html",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/admin/base_site.html",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/admin/change_form.html",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/mdb/layouts/base.html",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/registration/password_reset_email.html",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/admin/base.html",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/mdb/includes/navigation.html",
+		"/home/galactus/Desktop/labexpress/labexpress/orden_trabajo/models.py",
+		"/home/galactus/Desktop/labexpress/labexpress/configuraciones/signals.py",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/mdb/ordentrabajo/mis-ots.html",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/mdb/products/product_list.html",
+		"/home/galactus/Desktop/labexpress/labexpress/configuraciones/models.py",
+		"/home/galactus/Desktop/labexpress/labexpress/facturacion/static/admin/apertura_caja/apertura_caja.js",
+		"/home/galactus/Desktop/labexpress/labexpress/app/views.py",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/mdb/ui-notifications.html",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/mdb/includes/navigation-rtl.html",
+		"/home/galactus/Desktop/labexpress/labexpress/configuraciones/ajax.py",
+		"/home/galactus/Desktop/labexpress/labexpress/configuraciones/urls.py",
+		"/home/galactus/Desktop/labexpress/labexpress/administracion/urls.py",
+		"/home/galactus/Desktop/labexpress/labexpress/facturacion/ajax.py",
+		"/home/galactus/MEGAsync/proyectos/retoqueria/templates/admin/base.html",
+		"/home/galactus/MEGAsync/proyectos/retoqueria/templates/admin/index.html",
+		"/home/galactus/Desktop/labexpress/labexpress/ApiExpress/serializers.py",
+		"/home/galactus/Desktop/labexpress/labexpress/configuraciones/functions.py",
+		"/home/galactus/Desktop/labexpress/labexpress/configuraciones/admin.py",
+		"/home/galactus/Desktop/labexpress/labexpress/configuraciones/__init__.py",
+		"/home/galactus/Desktop/labexpress/labexpress/configuraciones/apps.py",
+		"/home/galactus/Desktop/labexpress/labexpress/authentication/__init__.py",
+		"/home/galactus/Desktop/labexpress/labexpress/labExpress/settings.py",
+		"/home/galactus/Desktop/labexpress/labexpress/authentication/forms.py",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/mdb/accounts/login.html",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/login.html",
+		"/home/galactus/Desktop/labexpress/labexpress/authentication/myviews.py",
+		"/home/galactus/Desktop/labexpress/labexpress/dissoi/utils.py",
+		"/home/galactus/Desktop/labexpress/labexpress/facturacion/admin.py",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/admin/login.html",
+		"/home/galactus/Desktop/labexpress/labexpress/ApiExpress/views.py",
+		"/home/galactus/Desktop/labexpress/labexpress/configuraciones/views.py",
+		"/home/galactus/Desktop/labexpress/labexpress/app/urls.py",
+		"/home/galactus/Desktop/labexpress/labexpress/templates/email_factura_cliente.html",
+		"/home/galactus/Desktop/labexpress/labexpress/configuraciones/templates/admin/configuraciones/cliente/anular_notificaciones_email_cliente.html",
+		"/home/galactus/Desktop/labexpress/labexpress/facturacion/views.py",
+		"/home/galactus/Desktop/labexpress/labexpress/facturacion/urls.py",
+		"/home/galactus/Desktop/labexpress/labexpress/facturacion/reports.py",
+		"/home/galactus/Desktop/backend/tutorial/snippets/views.py",
+		"/home/galactus/Desktop/backend/tutorial/snippets/admin.py",
+		"/home/galactus/Desktop/backend/tutorial/snippets/models.py",
+		"/home/galactus/Desktop/backend/tutorial/snippets/urls.py",
+		"/home/galactus/Desktop/backend/tutorial/snippets/serializers.py",
+		"/home/galactus/Desktop/backend/tutorial/tutorial/urls.py",
+		"/home/galactus/Desktop/backend/tutorial/quickstart/admin.py",
+		"/home/galactus/Desktop/backend/tutorial/tutorial/settings.py",
+		"/home/galactus/Desktop/backend/tutorial/quickstart/views.py",
+		"/home/galactus/Desktop/backend/tutorial/quickstart/serializers.py",
+		"/home/galactus/Desktop/django-prj/labexpress/labExpress/settings.py",
+		"/home/galactus/Desktop/django-prj/labexpress/migracion/clientes.csv",
+		"/home/galactus/Desktop/django-prj/labexpress/ApiExpress/models.py",
+		"/home/galactus/Desktop/django-prj/labexpress/ApiExpress/serializers.py",
+		"/home/galactus/Desktop/django-prj/labexpress/ApiExpress/views.py",
+		"/home/galactus/Desktop/django-prj/labexpress/ApiExpress/urls.py",
+		"/home/galactus/Desktop/django-prj/labexpress/configuraciones/models.py",
+		"/home/galactus/Desktop/django-prj/labexpress/facturacion/management/commands/fix_permissions.py",
+		"/home/galactus/Desktop/django-prj/labexpress/facturacion/reports.py",
+		"/home/galactus/Desktop/django-prj/labexpress/configuraciones/apps.py",
+		"/home/galactus/Desktop/django-prj/labexpress/releases/v0.5/add_column.sql",
+		"/home/galactus/Desktop/django-api-rest/djreact/alumnos/views.py",
+		"/home/galactus/Desktop/django-api-rest/djreact/materias/models.py",
+		"/home/galactus/Desktop/django-api-rest/djreact/alumnos/models.py",
+		"/home/galactus/Desktop/django-api-rest/djreact/materias/admin.py",
+		"/home/galactus/Desktop/django-api-rest/djreact/incripciones/models.py",
+		"/home/galactus/Desktop/django-api-rest/djreact/profesores/models.py",
+		"/home/galactus/Desktop/django-api-rest/djreact/alumnos/admin.py",
+		"/home/galactus/Desktop/django-api-rest/djreact/alumnos/urls.py",
+		"/home/galactus/Desktop/django-api-rest/djreact/djreact/urls.py",
+		"/home/galactus/Desktop/django-api-rest/djreact/alumnos/serializers.py",
+		"/home/galactus/Desktop/node-api-rest/package.json",
+		"/home/galactus/Desktop/node-api-rest/src/index.js",
+		"/home/galactus/Desktop/node-api-rest/src/routes/projects.js",
+		"/home/galactus/Desktop/node-api-rest/src/routes/tasks.js",
+		"/home/galactus/Desktop/node-api-rest/babelrc"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"  "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "front-end/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2236,
+								2236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 720.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/controllers/mesa.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3246,
+								3246
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1260.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/models/Mesas.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 960,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/controllers/cliente.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3068,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2695,
+								2695
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1419.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Node_API_Rest.sublime-project",
+	"replace":
+	{
+		"height": 69.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 285.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

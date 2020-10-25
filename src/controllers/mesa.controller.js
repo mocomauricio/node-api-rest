@@ -119,3 +119,24 @@ export async function updateMesa(req, res){
         });
     }
 }
+
+
+export async function getMesasPorRestauranteFechaRango(req, res){
+    const { restaurante_id, fecha, rango_hora } = req.params;
+    try {
+        const mesas = await Mesa.findAll({
+            where: {
+                restaurante_id:restaurante_id
+            }
+        });
+        res.json({
+            data:mesas
+        });        
+    } catch (error) {
+        console.log(error)
+        return res.status(500).json({
+            message: 'Hubo un error',
+            data: {}
+        });
+    }
+}
