@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Lista de reservas</title>
+
+
+	<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+	<form id="id_formulario">
+		<label for="id_restaurantes">Restaurante:</label>
+		<select name="restaurantes" id="id_restaurantes">
+			<option value=""> ------- </option>
+		</select> 
+
+		<label for="id_fecha">Fecha:</label>
+		<input type="date" id="id_fecha" name="fecha" value="" min="2018-01-01" max="2030-12-31">
+
+		<label for="id_clientes">Cliente:</label>
+		<select name="clientes" id="id_clientes">
+			<option value=""> ----- </option>
+		</select> 
+
+		<button type="button" id="id_filtrar_reservas">Buscar reservas</button> 
+	</form>
+
+	<h1>Resultados</h1>
+	<table id="id_tabla_reservas"></table>
+
+	<script src="static/js/jquery-3.5.1.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/pwbe-listar-reservas.js"></script>
+
+</body>
+</html>
