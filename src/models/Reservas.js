@@ -39,7 +39,7 @@ Reserva.init({
     },
 
     fecha: {
-        type: DataTypes.DATE
+        type: DataTypes.DATEONLY
     },
 
     rango_hora:{

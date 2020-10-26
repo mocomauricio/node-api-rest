@@ -38,7 +38,7 @@ $("#id_buscar_mesa").click(function() {
 				<th>Posicion</th>
 				<th>Planta</th>
 				<th>Capacidad</th>
-				<th>Capacidad Requerida</th>
+				<th>Capacidad Solicitada</th>
 				<th>Accion</th>
 			</tr>`);
 
@@ -49,7 +49,7 @@ $("#id_buscar_mesa").click(function() {
 					<td>${mesa.posicion}</td>
 					<td>${mesa.planta}</td>
 					<td>${mesa.capacidad}</td>
-					<td>-----</td>
+					<td><input type="number" id="id_capacidad_solicitada_${mesa.id}" name="quantity" min="1" max="5" value="${mesa.capacidad}"> </td>
 					<td> 
 						<button type="button" id="${mesa.id}" class="btn_mesa">Reservar</button> 
 					</td>
@@ -57,7 +57,7 @@ $("#id_buscar_mesa").click(function() {
 		})
 	})
 	.catch(function (error) {
-		console.warn(error);
+		console.log(error);
 	});
 });
 
@@ -139,7 +139,7 @@ $("#id_guardar").click(function() {
 						'cliente_id': data.data.id,
 						'fecha': $("#id_fecha").val(),
 						'rango_hora':rangos[i],
-						'cantidad_solicitada':5
+						'cantidad_solicitada': $("#id_capacidad_solicitada_"+$("#mesa_id").val()  ).val()
 					})
 				})
 				.then((resp) => resp.json())

@@ -1,5 +1,7 @@
 import Mesa from '../models/Mesas'
-
+import Reserva from '../models/Reservas'
+import Sequelize from 'sequelize';
+ 
 export async function getMesas(req, res){
     try {
         const mesas = await Mesa.findAll();
@@ -14,11 +16,11 @@ export async function getMesas(req, res){
         });
     }
 }
-
+ 
 export async function getOneMesa(req, res){
     const { id } = req.params;
     try {
-
+ 
         const mesa = await Mesa.findOne({
             where: {
                 id:id
@@ -32,10 +34,10 @@ export async function getOneMesa(req, res){
             data: {}
         });
     }
-
-
+ 
+ 
 }
-
+ 
 export async function deleteMesa(req, res){
     const { id } = req.params;
     try {
@@ -55,10 +57,10 @@ export async function deleteMesa(req, res){
             data: {}
         });
     }
-
-
+ 
+ 
 }
-
+ 
 export async function createMesa(req, res){
     //console.log(req.body);
     const { nombre, restaurante_id, posicion, planta, capacidad } = req.body;
@@ -86,18 +88,18 @@ export async function createMesa(req, res){
         });
     }
 }
-
+ 
 export async function updateMesa(req, res){
     const { id } = req.params;
     const { nombre, restaurante_id, posicion, planta, capacidad } = req.body;
-
+ 
     try {
         const mesa = await Mesa.findOne({
             where: {
                 id:id
             }
         });
-
+ 
         await mesa.update({
             nombre: nombre,
             restaurante_id: restaurante_id,
@@ -105,7 +107,7 @@ export async function updateMesa(req, res){
             planta:planta,
             capacidad:capacidad
         });
-
+ 
         return res.json({
             message: 'Mesa actualizado satisfactoriamente',
             data: mesa
@@ -119,19 +121,52 @@ export async function updateMesa(req, res){
         });
     }
 }
-
-
+ 
+// Funcion que trae las mesas disponibles
+// Traer todas las mesas reservadas del restaurante a esa hora
+// Traer todas las mesas de ese restaurante
+// Crear lista buscando todas las mesas.
+// Devolver esa info
+ 
 export async function getMesasPorRestauranteFechaRango(req, res){
     const { restaurante_id, fecha, rango_hora } = req.params;
+    let mesas;
+    let reserva;
+    const Op = Sequelize.Op;
+ 
+    // Si rango de horas tiene mas de una fecha, poner el primero y el ultimo en 
+    
+    let condicion;
+    let listaRangoHoras = rango_hora.split(',');
+    console.log(listaRangoHoras)
+    console.log(listaRangoHoras.length)
+ 
+    if (listaRangoHoras.length > 1) {
+        condicion = {
+            [Op.between]: [listaRangoHoras[0], listaRangoHoras[listaRangoHoras.length - 1]]
+        }
+    } else {
+        condicion = listaRangoHoras[0];
+    }
+ 
+    console.log(listaRangoHoras)
+    console.log(condicion)
+ 
     try {
-        const mesas = await Mesa.findAll({
+        mesas = await Mesa.findAll({
             where: {
                 restaurante_id:restaurante_id
             }
         });
-        res.json({
-            data:mesas
-        });        
+ 
+        reserva = await Reserva.findAll({
+            where: {
+                restaurante_id:restaurante_id,
+                fecha: fecha,
+                rango_hora: condicion
+            }
+        });
+        // Get reservas   
     } catch (error) {
         console.log(error)
         return res.status(500).json({
@@ -139,4 +174,16 @@ export async function getMesasPorRestauranteFechaRango(req, res){
             data: {}
         });
     }
+ 
+    const mesasTotal = [];
+    const reservasTotal = [];
+    const mesaDisponible = [];
+ 
+    mesas.forEach(mesa => mesasTotal.push(mesa.dataValues))
+    reserva.forEach(r => reservasTotal.push(r.dataValues))
+    const results = mesasTotal.filter(({ id: id1 }) => !reservasTotal.some(({ mesa_id: id2 }) => id2 === id1));
+ 
+    res.json({
+        data:results
+    });     
 }
