@@ -49,7 +49,7 @@ $("#id_buscar_mesa").click(function() {
 					<td>${mesa.posicion}</td>
 					<td>${mesa.planta}</td>
 					<td>${mesa.capacidad}</td>
-					<td><input type="number" id="id_capacidad_solicitada_${mesa.id}" name="quantity" min="1" max="5" value="${mesa.capacidad}"> </td>
+					<td><input type="number" id="id_capacidad_solicitada_${mesa.id}" name="quantity" min="1" max="${mesa.capacidad}" value="${mesa.capacidad}"> </td>
 					<td> 
 						<button type="button" id="${mesa.id}" class="btn_mesa">Reservar</button> 
 					</td>
